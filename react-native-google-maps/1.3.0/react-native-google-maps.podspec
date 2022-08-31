@@ -34,10 +34,10 @@ Pod::Spec.new do |s|
   s.dependency "DoubleConversion"
   s.dependency "RCT-Folly", folly_version
   s.dependency "glog"
-  s.dependency "React-jsinspector", version
-  s.dependency "React-callinvoker", version
-  s.dependency "React-runtimeexecutor", version
-  s.dependency "React-perflogger", version
-  s.dependency "React-jsi", version
-  s.dependency "React-logger", version
+  s.dependency "React-jsinspector"
+  s.dependency "React-callinvoker"
+  s.dependency "React-runtimeexecutor"
+  s.dependency "React-perflogger"
+  s.dependency "React-jsi"
+  s.dependency "React-logger"
 end
