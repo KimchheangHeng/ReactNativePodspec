@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
                           }
 
   s.dependency 'React-Core'
-  s.dependency 'GoogleMaps', '7.0.0'
-  s.dependency 'Google-Maps-iOS-Utils'
-  s.dependency 'react-native-google-maps'
+  # s.dependency 'GoogleMaps', '7.0.0'
+  # s.dependency 'Google-Maps-iOS-Utils'
+  # s.dependency 'react-native-google-maps'
 end
