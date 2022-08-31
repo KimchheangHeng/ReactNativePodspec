@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.source_files           = "ReactCommon/logger/*.{cpp,h}"
   s.exclude_files          = "SampleCxxModule.*"
   s.compiler_flags         = folly_compiler_flags + ' ' + boost_compiler_flags
-  s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "" }
+  s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/React-logger/ \"$(PODS_ROOT)/glog/\"" }
   s.header_dir             = "logger"
 
   s.dependency "glog"
