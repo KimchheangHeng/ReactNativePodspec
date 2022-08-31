@@ -30,7 +30,8 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'USE_HEADERMAP' => 'NO',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
-    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Clustering/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Geometry/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/GeometryUtils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Heatmap/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/QuadTree/\""
+    # 'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Clustering/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Geometry/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/GeometryUtils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Heatmap/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/QuadTree/\""
+    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
   }
 
   s.public_header_files = "src/**/*.h"
@@ -65,18 +66,18 @@ Pod::Spec.new do |s|
   #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
   # end
 
-  # s.test_spec 'Tests' do |unit_tests|
-  #   unit_tests.source_files = [
-  #     "GoogleMapsUtils/GoogleMapsUtils.h",
-  #     "test/common/Model/*.{h,m,swift}",
-  #     "test/unit/**/*.{h,m,swift}",
-  #   ]
-  #   unit_tests.resources = [
-  #     "test/resources/**/*.{geojson,kml}"
-  #   ]
-  #   unit_tests.pod_target_xcconfig = {
-  #     'SWIFT_OBJC_BRIDGING_HEADER' => "$(PODS_TARGET_SRCROOT)/test/unit/BridgingHeader/UnitTest-Bridging-Header.h"
-  #   }
-  #   unit_tests.dependency 'OCMock'
-  # end
+  s.test_spec 'Tests' do |unit_tests|
+    unit_tests.source_files = [
+      "GoogleMapsUtils/GoogleMapsUtils.h",
+      "test/common/Model/*.{h,m,swift}",
+      "test/unit/**/*.{h,m,swift}",
+    ]
+    unit_tests.resources = [
+      "test/resources/**/*.{geojson,kml}"
+    ]
+    unit_tests.pod_target_xcconfig = {
+      'SWIFT_OBJC_BRIDGING_HEADER' => "$(PODS_TARGET_SRCROOT)/test/unit/BridgingHeader/UnitTest-Bridging-Header.h"
+    }
+    unit_tests.dependency 'OCMock'
+  end
 end
