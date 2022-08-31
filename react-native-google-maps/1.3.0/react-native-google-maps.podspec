@@ -22,22 +22,11 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
                             "USE_HEADERMAP" => "YES",
                             "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",
-                            "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/RCT-Folly\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/React-cxxreact\" \"$(PODS_ROOT)/React-callinvoker\" \"$(PODS_ROOT)/React-runtimeexecutor\" \"$(PODS_ROOT)/React-perflogger\""
+                            "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
                           }
 
   s.dependency 'React-Core'
   s.dependency 'GoogleMaps'
   s.dependency 'Google-Maps-iOS-Utils'
   # s.dependency 'react-native-maps'
-
-  s.dependency "boost-for-react-native", "1.63.0"
-  s.dependency "DoubleConversion"
-  s.dependency "RCT-Folly", folly_version
-  s.dependency "glog"
-  s.dependency "React-jsinspector"
-  s.dependency "React-callinvoker"
-  s.dependency "React-runtimeexecutor"
-  s.dependency "React-perflogger"
-  s.dependency "React-jsi"
-  s.dependency "React-logger"
 end
