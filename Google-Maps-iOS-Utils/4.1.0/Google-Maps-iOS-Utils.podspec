@@ -35,8 +35,8 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "src/**/*.h"
   s.source_files = "src/**/*.{h,m,swift}"
-  s.exclude_files = "src/#{sp.base_name}/GMUMarkerClustering.h"
-  
+  s.exclude_files = "src/Clustering/GMUMarkerClustering.h"
+
   # s.subspec 'QuadTree' do |sp|
   #   sp.public_header_files = "src/#{sp.base_name}/**/*.h"
   #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
