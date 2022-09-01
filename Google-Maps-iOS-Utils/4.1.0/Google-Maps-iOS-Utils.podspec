@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/googlemaps/google-maps-ios-utils.git",
                      :tag => "v#{s.version.to_s}" }
   s.requires_arc = true
-  s.module_name = "GoogleMapsUtils"
+  # s.module_name = "GoogleMapsUtils"
+  s.module_name = "Google-Maps-iOS-Utils"
   s.swift_version = '5.0'
 
   s.dependency 'GoogleMaps'
