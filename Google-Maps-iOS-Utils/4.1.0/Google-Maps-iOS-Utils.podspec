@@ -28,43 +28,43 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.pod_target_xcconfig = { 
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'USE_HEADERMAP' => 'NO',
+    'USE_HEADERMAP' => 'YES',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
-    # 'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Clustering/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Geometry/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/GeometryUtils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Heatmap/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/QuadTree/\""
-    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
+    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Clustering/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Geometry/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/GeometryUtils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Heatmap/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/QuadTree/\""
+    # 'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
   }
 
-  s.public_header_files = "src/**/*.h"
-  s.source_files = "src/**/*.{h,m,swift}"
-  s.exclude_files = "src/Clustering/GMUMarkerClustering.h"
+  # s.public_header_files = "src/**/*.h"
+  # s.source_files = "src/**/*.{h,m,swift}"
+  # s.exclude_files = "src/Clustering/GMUMarkerClustering.h"
 
-  # s.subspec 'QuadTree' do |sp|
-  #   sp.public_header_files = "src/#{sp.base_name}/**/*.h"
-  #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-  # end
+  s.subspec 'QuadTree' do |sp|
+    sp.public_header_files = "src/#{sp.base_name}/**/*.h"
+    sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
+  end
 
-  # s.subspec 'Clustering' do |sp|
-  #   sp.public_header_files = "src/#{sp.base_name}/**/*.h"
-  #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-  #   sp.exclude_files = "src/#{sp.base_name}/GMUMarkerClustering.h"
-  #   sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
-  # end
+  s.subspec 'Clustering' do |sp|
+    sp.public_header_files = "src/#{sp.base_name}/**/*.h"
+    sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
+    sp.exclude_files = "src/#{sp.base_name}/GMUMarkerClustering.h"
+    sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
+  end
 
-  # s.subspec 'Geometry' do |sp|
-  #    sp.public_header_files = "src/#{sp.base_name}/**/*.h"
-  #    sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-  # end
+  s.subspec 'Geometry' do |sp|
+     sp.public_header_files = "src/#{sp.base_name}/**/*.h"
+     sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
+  end
 
-  # s.subspec 'Heatmap' do |sp|
-  #   sp.public_header_files = "src/#{sp.base_name}/**/*.h"
-  #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-  #   sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
-  # end
+  s.subspec 'Heatmap' do |sp|
+    sp.public_header_files = "src/#{sp.base_name}/**/*.h"
+    sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
+    sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
+  end
   
-  # s.subspec 'GeometryUtils' do |sp|
-  #   sp.public_header_files = "src/#{sp.base_name}/**/*.h"
-  #   sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-  # end
+  s.subspec 'GeometryUtils' do |sp|
+    sp.public_header_files = "src/#{sp.base_name}/**/*.h"
+    sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
+  end
 
   s.test_spec 'Tests' do |unit_tests|
     unit_tests.source_files = [
