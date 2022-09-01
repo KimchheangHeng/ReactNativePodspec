@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target     = "10.0"
   s.tvos.deployment_target    = "11.0"
   s.requires_arc              = true
+  s.static_framework = true
 
   s.source                    = { :git => "https://github.com/zoontek/react-native-permissions.git", :tag => s.version }
   s.source_files              = "ios/LocationWhenInUse/*.{h,m}"
