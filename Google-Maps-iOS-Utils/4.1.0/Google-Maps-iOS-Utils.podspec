@@ -31,13 +31,8 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'USE_HEADERMAP' => 'YES',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
-    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Clustering/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Geometry/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/GeometryUtils/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/Heatmap/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/QuadTree/\""
-    # 'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
+    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\""
   }
-
-  # s.public_header_files = "src/**/*.h"
-  # s.source_files = "src/**/*.{h,m,swift}"
-  # s.exclude_files = "src/Clustering/GMUMarkerClustering.h"
 
   s.subspec 'QuadTree' do |sp|
     sp.public_header_files = "src/#{sp.base_name}/**/*.h"
