@@ -190,5 +190,5 @@
     "validate:typescript": "tsc --project ./ --noEmit"
   },
   "types": "lib/typescript/src/index.d.ts",
-  "version": "5.9.7"
+  "version": "9.3.0"
 }
