@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.cocoapods_version   = '>= 1.10.0'
   s.source_files        = "packages/app/ios/**/*.{h,m}"
   s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/RCT-Folly\"" }
+  spec.prepare_command = File.read("./ios_config.sh")
 
   # React Native dependencies
   s.dependency          'React-Core'
