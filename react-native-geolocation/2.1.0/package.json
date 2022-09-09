@@ -157,5 +157,5 @@
     "validate:flow": "flow check"
   },
   "typings": "typings/index.d.ts",
-  "version": "2.0.2"
+  "version": "2.1.0"
 }
