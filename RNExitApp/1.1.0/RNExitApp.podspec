@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
 	# s.source         = { :git => repository, :tag => version }
 	s.source         = { :git => "https://github.com/wumke/react-native-exit-app" }
 	s.platform       = :ios, "9.0"
-	s.preserve_paths = 'README.md', 'package.json', '*.js'
+	# s.preserve_paths = 'README.md', 'package.json', '*.js'
+	s.preserve_paths = 'README.md', '*.js'
 	s.source_files   = 'ios/RNExitApp/**/*.{h,m}'
 
 	s.pod_target_xcconfig = {

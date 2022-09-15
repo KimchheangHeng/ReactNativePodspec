@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.compiler_flags         = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.source                 = source
   s.source_files           = "Libraries/Network/*.{m,mm}"
-  s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
+  # s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTNetwork"
   s.pod_target_xcconfig    = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/Libraries/Network/\" \"$(PODS_ROOT)/RCT-Folly/\"" }
   s.frameworks             = "MobileCoreServices"

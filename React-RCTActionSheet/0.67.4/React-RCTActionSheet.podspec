@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "Libraries/ActionSheetIOS/*.{m}"
   # s.public_header_files    = "Libraries/ActionSheetIOS/*.{m}"
-  s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
+  # s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTActionSheet"
 
   s.dependency "React-Core/RCTActionSheetHeaders", version

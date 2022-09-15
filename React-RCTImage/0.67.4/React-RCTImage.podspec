@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "Libraries/Image/*.{m,mm}"
   # s.public_header_files    = "Libraries/Image/*.h"
-  s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
+  # s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTImage"
   s.pod_target_xcconfig    = {
                                "USE_HEADERMAP" => "YES",

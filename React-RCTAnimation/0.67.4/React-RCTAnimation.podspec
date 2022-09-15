@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   # s.source_files           = "{Drivers/*,Nodes/*,*}.{m,mm}"
   s.source_files           = "Libraries/NativeAnimation/**/*.{h,m,mm}", "Libraries/NativeAnimation/*.{h,m,mm}"
   # s.public_header_files    = "Libraries/NativeAnimation/**/*.{h,m,mm}", "Libraries/NativeAnimation/*.{h,m,mm}"
-  s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
+  # s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTAnimation"
   s.pod_target_xcconfig    = {
                                "USE_HEADERMAP" => "YES",

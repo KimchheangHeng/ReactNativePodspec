@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source                 = source
   s.source_files           = "Libraries/Blob/*.{h,m,mm}"
   # s.public_header_files    = "Libraries/Blob/*.h"
-  s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
+  # s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.header_dir             = "RCTBlob"
   s.pod_target_xcconfig    = {
                                "USE_HEADERMAP" => "YES",
