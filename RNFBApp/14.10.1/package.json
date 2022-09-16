@@ -1,6 +1,6 @@
 {
-  "_from": "@react-native-firebase/app@11.5.0",
-  "_id": "@react-native-firebase/app@11.5.0",
+  "_from": "@react-native-firebase/app@14.10.1",
+  "_id": "@react-native-firebase/app@14.10.1",
   "_inBundle": false,
   "_integrity": "sha512-Jz5CBhqkybxHjTFr5V0K+Jq2YivzPbu9exSze61/z1zSaIfBhR4G38wmHk44VWAl+PEX8GaYy9yfT69tLiCERA==",
   "_location": "/@react-native-firebase/app",
@@ -8,20 +8,20 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@react-native-firebase/app@11.5.0",
+    "raw": "@react-native-firebase/app@14.10.1",
     "name": "@react-native-firebase/app",
     "escapedName": "@react-native-firebase%2fapp",
     "scope": "@react-native-firebase",
-    "rawSpec": "11.5.0",
+    "rawSpec": "14.10.1",
     "saveSpec": null,
-    "fetchSpec": "11.5.0"
+    "fetchSpec": "14.10.1"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@react-native-firebase/app/-/app-11.5.0.tgz",
+  "_resolved": "https://registry.npmjs.org/@react-native-firebase/app/-/app-14.10.1.tgz",
   "_shasum": "cc7656d8bd580ddf63676774c5f4e73af3652c9c",
-  "_spec": "@react-native-firebase/app@11.5.0",
+  "_spec": "@react-native-firebase/app@14.10.1",
   "_where": "/Users/bunnarith.heang/Downloads/wingmall-customer",
   "author": {
     "name": "Invertase",

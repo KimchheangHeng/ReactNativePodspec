@@ -1,6 +1,6 @@
 {
-  "_from": "@react-native-firebase/firestore@11.5.0",
-  "_id": "@react-native-firebase/firestore@11.5.0",
+  "_from": "@react-native-firebase/firestore@14.10.1",
+  "_id": "@react-native-firebase/firestore@14.10.1",
   "_inBundle": false,
   "_integrity": "sha512-yZv5bxTNICckRtEucb9SSX0slXN4CbN5ZT7tFh9Pm1CTEtU2jVcSC7qhG5l5SqmcoMOBnFavm8Mbti6BY5/1cg==",
   "_location": "/@react-native-firebase/firestore",
@@ -8,20 +8,20 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@react-native-firebase/firestore@11.5.0",
+    "raw": "@react-native-firebase/firestore@14.10.1",
     "name": "@react-native-firebase/firestore",
     "escapedName": "@react-native-firebase%2ffirestore",
     "scope": "@react-native-firebase",
-    "rawSpec": "11.5.0",
+    "rawSpec": "14.10.1",
     "saveSpec": null,
-    "fetchSpec": "11.5.0"
+    "fetchSpec": "14.10.1"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@react-native-firebase/firestore/-/firestore-11.5.0.tgz",
+  "_resolved": "https://registry.npmjs.org/@react-native-firebase/firestore/-/firestore-14.10.1.tgz",
   "_shasum": "3e0349891cb908fe7d24f9b3c1315ff6ffd8e3d6",
-  "_spec": "@react-native-firebase/firestore@11.5.0",
+  "_spec": "@react-native-firebase/firestore@14.10.1",
   "_where": "/Users/bunnarith.heang/Downloads/wingmall-customer",
   "author": {
     "name": "Invertase",
@@ -47,7 +47,7 @@
   "main": "lib/index.js",
   "name": "@react-native-firebase/firestore",
   "peerDependencies": {
-    "@react-native-firebase/app": "11.5.0"
+    "@react-native-firebase/app": "14.10.1"
   },
   "publishConfig": {
     "access": "public"

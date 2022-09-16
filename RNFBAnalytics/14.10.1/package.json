@@ -1,6 +1,6 @@
 {
-  "_from": "@react-native-firebase/analytics@11.5.0",
-  "_id": "@react-native-firebase/analytics@11.5.0",
+  "_from": "@react-native-firebase/analytics@14.10.1",
+  "_id": "@react-native-firebase/analytics@14.10.1",
   "_inBundle": false,
   "_integrity": "sha512-54RZBZmnSQRmuyPH2EcLfGJB4dn/VEUyd75xkEC3SKO4A68763myKtc8PAgZxcfsnEApA6LTJN/CqoZwEGG9Bg==",
   "_location": "/@react-native-firebase/analytics",
@@ -8,20 +8,20 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@react-native-firebase/analytics@11.5.0",
+    "raw": "@react-native-firebase/analytics@14.10.1",
     "name": "@react-native-firebase/analytics",
     "escapedName": "@react-native-firebase%2fanalytics",
     "scope": "@react-native-firebase",
-    "rawSpec": "11.5.0",
+    "rawSpec": "14.10.1",
     "saveSpec": null,
-    "fetchSpec": "11.5.0"
+    "fetchSpec": "14.10.1"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@react-native-firebase/analytics/-/analytics-11.5.0.tgz",
+  "_resolved": "https://registry.npmjs.org/@react-native-firebase/analytics/-/analytics-14.10.1.tgz",
   "_shasum": "7a4388a264ff7799ab3a257906a4fd965a92660a",
-  "_spec": "@react-native-firebase/analytics@11.5.0",
+  "_spec": "@react-native-firebase/analytics@14.10.1",
   "_where": "/Users/bunnarith.heang/Downloads/wingmall-customer",
   "author": {
     "name": "Invertase",
@@ -42,7 +42,7 @@
   "main": "lib/index.js",
   "name": "@react-native-firebase/analytics",
   "peerDependencies": {
-    "@react-native-firebase/app": "11.5.0"
+    "@react-native-firebase/app": "14.10.1"
   },
   "publishConfig": {
     "access": "public"
