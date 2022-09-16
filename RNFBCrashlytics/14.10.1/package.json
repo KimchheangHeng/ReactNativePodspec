@@ -65,5 +65,5 @@
     "prepare": "yarn run build"
   },
   "types": "lib/index.d.ts",
-  "version": "11.5.0"
+  "version": "14.10.1"
 }
