@@ -1,6 +1,6 @@
 require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
-appPackage = JSON.parse(File.read(File.join('..', '..', 'RNFBApp', '14.10.1', 'package.json')))
+appPackage = JSON.parse(File.read(File.join('..', '..', 'RNFBApp', '15.4.0', 'package.json')))
 
 coreVersionDetected = appPackage['version']
 coreVersionRequired = package['peerDependencies'][appPackage['name']]
