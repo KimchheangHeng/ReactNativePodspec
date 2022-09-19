@@ -34,7 +34,7 @@ Cloud Functions for Firebase.
   s.swift_version = '5.3'
 
   s.source_files = [
-    'FirebaseFunctions/Sources/**/*.swift',
+    'FirebaseFunctions/Sources/**/*.{h,m,swift}',
   ]
 
   s.dependency 'FirebaseCore', '~> 9.0'
