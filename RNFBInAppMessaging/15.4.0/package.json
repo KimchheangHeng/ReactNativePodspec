@@ -1,0 +1,67 @@
+{
+  "_from": "@react-native-firebase/in-app-messaging@15.4.0",
+  "_id": "@react-native-firebase/in-app-messaging@15.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-8hvruGjCmGScVpWRdC/J5nJ1nQxfUxcut+Q91Wa7m9mBASHQaS3HLZ/ehGZfSJyI/HTdkWmEHkmd6g0ANjLsxA==",
+  "_location": "/@react-native-firebase/in-app-messaging",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@react-native-firebase/in-app-messaging@15.4.0",
+    "name": "@react-native-firebase/in-app-messaging",
+    "escapedName": "@react-native-firebase%2fin-app-messaging",
+    "scope": "@react-native-firebase",
+    "rawSpec": "15.4.0",
+    "saveSpec": null,
+    "fetchSpec": "15.4.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@react-native-firebase/in-app-messaging/-/in-app-messaging-15.4.0.tgz",
+  "_shasum": "da0983afc93b4c3267baac07c33e24a90f9bc275",
+  "_spec": "@react-native-firebase/in-app-messaging@15.4.0",
+  "_where": "/Users/bunnarith.heang/Downloads/wingmall-customer",
+  "author": {
+    "name": "Invertase",
+    "email": "oss@invertase.io",
+    "url": "http://invertase.io"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "React Native Firebase - Firebase In-App Messaging helps you engage your app's active users by sending them targeted, contextual messages that encourage them to use key app features. React Native Firebase provides support for both native Android & iOS integration with a simple JavaScript API.",
+  "gitHead": "0217bff5cbbf233d7915efb4dbbdfe00e82dff23",
+  "keywords": [
+    "react",
+    "react-native",
+    "firebase",
+    "in-app messaging",
+    "analytics",
+    "predictions",
+    "engage",
+    "active users",
+    "inAppMessaging"
+  ],
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "name": "@react-native-firebase/in-app-messaging",
+  "peerDependencies": {
+    "@react-native-firebase/analytics": "15.4.0",
+    "@react-native-firebase/app": "15.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/invertase/react-native-firebase/tree/master/packages/in-app-messaging"
+  },
+  "scripts": {
+    "build": "genversion --semi lib/version.js",
+    "build:clean": "rimraf android/build && rimraf ios/build",
+    "prepare": "yarn run build"
+  },
+  "types": "lib/index.d.ts",
+  "version": "15.4.0"
+}
