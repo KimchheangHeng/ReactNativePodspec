@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform             = :ios, "13.0"
 
   # s.source               = { :git => "https://github.com/react-native-maps/react-native-maps.git", :tag=> "v#{s.version}" }
-  s.source               = { :git => "https://github.com/BunnarithHeang/react-native-maps.git", :tag=> "v#{s.version}" }
+  s.source               = { :git => "https://github.com/BunnarithHeang/react-native-maps.git", :tag=> "v#{s.version}-Patch" }
   s.source_files         = "ios/AirGoogleMaps/**/*.{h,m}"
   s.public_header_files  = "ios/AirGoogleMaps/**/*.h"
   s.compiler_flags = folly_compiler_flags + ' -Wno-nullability-completeness' + ' -DHAVE_GOOGLE_MAPS=1' + ' -DHAVE_GOOGLE_MAPS_UTILS=1' + ' -fno-modules'
@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
                             "USE_HEADERMAP" => "YES",
                             "CLANG_CXX_LANGUAGE_STANDARD" => "c++14",
-                            "HEADER_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/react-native-google-maps/ \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/Google-Maps-iOS-Utils/\""
+                            "HEADER_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/react-native-google-maps/ \"$(PODS_ROOT)/React-Core/Default/\" \"$(PODS_ROOT)/RN-Google-Maps-iOS-Utils/\""
                           }
 
   s.dependency 'React-Core'
   s.dependency 'GoogleMaps'
-  s.dependency 'Google-Maps-iOS-Utils'
+  s.dependency 'RN-Google-Maps-iOS-Utils'
   # s.dependency 'react-native-maps'
 end

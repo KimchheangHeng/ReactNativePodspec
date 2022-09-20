@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "Google-Maps-iOS-Utils"
+  s.name         = "RN-Google-Maps-iOS-Utils"
   s.version      = "4.1.0"
   s.summary      = "A utilities library for use with Google Maps SDK for iOS."
   s.description  = "
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
                      :tag => "v#{s.version.to_s}" }
   s.requires_arc = true
   # s.module_name = "GoogleMapsUtils"
-  s.module_name = "Google_Maps_iOS_Utils"
+  s.module_name = "RN_Google_Maps_iOS_Utils"
   s.swift_version = '5.0'
 
   s.dependency 'GoogleMaps'
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'USE_HEADERMAP' => 'YES',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
-    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\""
+    'HEADER_SEARCH_PATHS' => "\"$(PODS_TARGET_SRCROOT)/RN-Google-Maps-iOS-Utils/\" \"$(PODS_ROOT)/React-Core/Default/\""
   }
 
   s.subspec 'QuadTree' do |sp|
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     sp.public_header_files = "src/#{sp.base_name}/**/*.h"
     sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
     sp.exclude_files = "src/#{sp.base_name}/GMUMarkerClustering.h"
-    sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
+    sp.dependency 'RN-Google-Maps-iOS-Utils/QuadTree'
   end
 
   s.subspec 'Geometry' do |sp|
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   s.subspec 'Heatmap' do |sp|
     sp.public_header_files = "src/#{sp.base_name}/**/*.h"
     sp.source_files = "src/#{sp.base_name}/**/*.{h,m,swift}"
-    sp.dependency 'Google-Maps-iOS-Utils/QuadTree'
+    sp.dependency 'RN-Google-Maps-iOS-Utils/QuadTree'
   end
   
   s.subspec 'GeometryUtils' do |sp|
