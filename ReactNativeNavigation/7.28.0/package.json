@@ -1,6 +1,6 @@
 {
   "_from": "react-native-navigation@^7.28.1",
-  "_id": "react-native-navigation@7.29.0",
+  "_id": "react-native-navigation@7.28.0",
   "_inBundle": false,
   "_integrity": "sha512-kDNaS54VBTlcUWfBmBRzk71Mau47mwktzoxGw3Pb2KPHCfwoEI5SyOAsx22PIgCzBXCK8vOxKrHCHYw/TnnQvQ==",
   "_location": "/react-native-navigation",
@@ -20,7 +20,7 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-navigation/-/react-native-navigation-7.29.0.tgz",
+  "_resolved": "https://registry.npmjs.org/react-native-navigation/-/react-native-navigation-7.28.0.tgz",
   "_shasum": "8dfcfdd2822385bbfdee53f4e787b3158dd0d115",
   "_spec": "react-native-navigation@^7.28.1",
   "_where": "/Users/bunnarith.heang/Downloads/wingmall-customer",
@@ -243,5 +243,5 @@
     "xcode": "open playground/ios/playground.xcworkspace"
   },
   "typings": "lib/dist/src/index.d.ts",
-  "version": "7.29.0"
+  "version": "7.28.0"
 }
