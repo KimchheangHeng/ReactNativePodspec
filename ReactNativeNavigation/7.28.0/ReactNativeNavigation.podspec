@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
-    s.source              = { :git => "https://github.com/wix/react-native-navigation.git", :tag => "#{s.version}" }
+    # s.source              = { :git => "https://github.com/wix/react-native-navigation.git", :tag => "#{s.version}" }
     # s.source              = { :git => "https://github.com/BunnarithHeang/react-native-navigation.git", :tag => "#{s.version}-Patch" }
+    s.source              = { :git => "/Users/bunnarith.heang/Desktop/ReactNativeIntegration/react-native-navigation" }
     s.source_files        = "lib/ios/**/*.{h,m,mm}"
     s.exclude_files       = "lib/ios/ReactNativeNavigationTests/**/*.*", "lib/ios/OCMock/**/*.*"
   end
