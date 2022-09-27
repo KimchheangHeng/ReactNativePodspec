@@ -184,7 +184,7 @@
     "typedoc": "0.x.x",
     "typescript": "4.4.3"
   },
-  "homepage": "https://github.com/wix/react-native-navigation",
+  "homepage": "https://github.com/KimchheangHeng/reactnativenavigation",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -213,7 +213,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wix/react-native-navigation.git"
+    "url": "git+https://github.com/KimchheangHeng/reactnativenavigation.git"
   },
   "scripts": {
     "build": "node ./scripts/build",
